@@ -1,0 +1,75 @@
+@import url(../css/Global.css);
+
+.sec_funcionalidades {
+  width: 100%;
+  height: 600px;
+  display: f;
+}
+
+.video_f {
+  width: 100%;
+  height: auto;
+  border: 2px solid #000;
+}
+
+.video_f video {
+  width: 100%;
+}
+
+/* Funcionalidades */
+
+.funcionalidades {
+  width: 100%;
+  height: 400px;
+  background-color: var(--azul_escuro);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Itens */
+
+.container_itens {
+  width: 80%;
+  height: 350px;
+}
+
+.container_itens h1 {
+  color: var(--amarelo);
+  text-align: center;
+  font-family: var(--fonte_Jakarta);
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+/* Container func */
+
+.container_func {
+  width: 90%;
+  height: 250px;
+  margin: 2% auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.func {
+  width: 20%;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.func h3 {
+  color: var(--branco_puro);
+  text-align: center;
+  font-family: var(--fonte_Nunito);
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
