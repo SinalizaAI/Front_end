@@ -49,7 +49,7 @@
 
 .buttons button {
   width: 45%;
-  height: 40px;
+  height: 50px;
   border-radius: 47px;
   color: var(--azul_escuro);
   font-family: var(--fonte_Jakarta);
@@ -68,6 +68,7 @@
   background-color: var(--azul_claro);
   color: var(--branco_puro);
   transition: 0.2s;
+  cursor: pointer;
 }
 
 .btn2 {
@@ -78,4 +79,5 @@
   background-color: var(--azul_claro);
   color: var(--branco_puro);
   transition: 0.2s;
+  cursor: pointer;
 }
