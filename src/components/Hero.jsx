@@ -15,7 +15,7 @@ function Hero() {
         <button className={styles.btn2}>Saiba mais</button>
       </div>
       {/* autoPlay muted loop */}
-      <video>
+      <video autoPlay muted loop>
         <source src={Video} />
       </video>
     </section>
