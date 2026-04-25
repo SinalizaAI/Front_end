@@ -6,6 +6,7 @@ import Vantagens from "./components/Vantagens";
 import Como_Funciona from "./components/Como_Funciona";
 import Planos from "./components/Planos";
 import Perguntas from "./components/Perguntas";
+import Fale from "./components/Fale";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Como_Funciona />
       <Planos />
       <Perguntas />
+      <Fale />
     </main>
   );
 }
