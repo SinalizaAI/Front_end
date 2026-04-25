@@ -2,10 +2,20 @@ import styles from "../css/Header.module.css";
 import Logo from "../assets/header/logo_n.svg";
 
 function Header() {
+  // Scroll
+  const scrollToSection = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
-    <header className={styles.header_principal}>
+    <header className={styles.header_principal} id="header">
       <nav className={styles.container_nav}>
-        <div className={styles.logo_container}>
+        <div
+          className={styles.logo_container}
+          onClick={() => scrollToSection("inicio")}
+        >
           <div className={styles.logo}>
             <img src={Logo} alt="logo" />
           </div>
@@ -15,8 +25,8 @@ function Header() {
         </div>
         <div className={styles.links_nav}>
           <nav>
-            <a href="">Home</a>
-            <a href="">Como funciona</a>
+            <a onClick={() => scrollToSection("inicio")}>Home</a>
+            <a onClick={() => scrollToSection("funciona")}>Como funciona</a>
             <a href="">Sobre nós</a>
             <button>Cadastre-se</button>
           </nav>

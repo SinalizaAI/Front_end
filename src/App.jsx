@@ -7,6 +7,7 @@ import Como_Funciona from "./components/Como_Funciona";
 import Planos from "./components/Planos";
 import Perguntas from "./components/Perguntas";
 import Fale from "./components/Fale";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <Planos />
       <Perguntas />
       <Fale />
+      <Footer />
     </main>
   );
 }

@@ -60,7 +60,7 @@ function Vantagens() {
   const index2 = pagina * 2 + 1;
 
   return (
-    <section className={styles.vantagens_sec}>
+    <section className={styles.vantagens_sec} id="vantagens">
       <h1>Vantagens de usar o SinalizaAI</h1>
 
       <div className={styles.container}>

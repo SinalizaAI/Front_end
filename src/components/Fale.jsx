@@ -9,54 +9,79 @@ function Fale() {
         <div className={styles.div1}>
           <div className={styles.texts}>
             <h2>Contato</h2>
-            <h4>
+            <p>
               Entre em contato para tirar suas dúvidas conosco sobre nossos
               produtos e serviços.
-            </h4>
+            </p>
           </div>
 
           <div className={styles.texts}>
             <h2>Endereço</h2>
-            <h4>Rua Tito 54, Lapa, São Paulo</h4>
+            <p>Rua Tito 54, Lapa, São Paulo</p>
           </div>
 
           <div className={styles.texts}>
             <h2>Telefone</h2>
-            <h4>11 9578963541</h4>
+            <p>11 9578963541</p>
           </div>
 
           <div className={styles.texts}>
             <h2>E-mail</h2>
-            <h4>Sinalizaai@gmail.com</h4>
+            <p>Sinalizaai@gmail.com</p>
           </div>
         </div>
+
         <div className={styles.div2}>
           <h2>Entre em contato</h2>
 
-          <div className={styles.container_div2}>
+          <form className={styles.container_div2}>
             <div className={styles.container_form}>
-              <h3>Seu nome</h3>
-              <div className={styles.line}></div>
+              <label htmlFor="nome">Seu nome</label>
+              <input
+                id="nome"
+                type="text"
+                name="nome"
+                placeholder=" "
+                required
+              />
             </div>
 
             <div className={styles.container_form}>
-              <h3>Seu telefone</h3>
-              <div className={styles.line}></div>
+              <label htmlFor="telefone">Seu telefone</label>
+              <input
+                id="telefone"
+                type="tel"
+                name="telefone"
+                placeholder=" "
+                required
+              />
             </div>
 
             <div className={styles.container_form}>
-              <h3>Seu e-mail</h3>
-              <div className={styles.line}></div>
+              <label htmlFor="email">Seu e-mail</label>
+              <input
+                id="email"
+                type="email"
+                name="email"
+                placeholder=" "
+                required
+              />
             </div>
 
-            <div className={styles.mensagem}>
-              <h4>Mensagem</h4>
+            <div className={styles.container_form}>
+              <label htmlFor="mensagem">Mensagem</label>
+              <textarea
+                id="mensagem"
+                name="mensagem"
+                rows={6}
+                required
+              />
             </div>
 
             <div className={styles.btn}>
-              <button>Enviar</button>
+              <button type="submit">Enviar</button>
             </div>
-          </div>
+          </form>
         </div>
       </div>
     </section>
