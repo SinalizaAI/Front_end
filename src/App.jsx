@@ -4,6 +4,7 @@ import Hero from "./components/Hero";
 import Section_funcionalidades from "./components/Section_funcionalidades";
 import Vantagens from "./components/Vantagens";
 import Como_Funciona from "./components/Como_Funciona";
+import Planos from "./components/Planos";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Section_funcionalidades />
       <Vantagens />
       <Como_Funciona />
+      <Planos />
     </main>
   );
 }
