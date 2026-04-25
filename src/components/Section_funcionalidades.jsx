@@ -2,7 +2,7 @@ import styles from "../css/Section_funcionalidades.module.css";
 import Video from "../assets/Funcionalidades/Video.mp4";
 import Funcionalidade_1 from "../assets/Funcionalidades/Speaker.svg";
 import Funcionalidade_2 from "../assets/Funcionalidades/Speaker2.png";
-import Funcionalidade_3 from "../assets/Funcionalidades/hand.svg";
+import Funcionalidade_3 from "../assets/Funcionalidades/Hand.svg";
 
 function Section_funcionalidades() {
   return (
