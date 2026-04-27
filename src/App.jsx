@@ -1,3 +1,4 @@
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
@@ -13,16 +14,21 @@ import Video from "./components/Video";
 function App() {
   return (
     <main>
-      <Header />
-      <Hero />
-      <Video />
-      <Section_funcionalidades />
-      <Vantagens />
-      <Como_Funciona />
-      <Planos />
-      <Perguntas />
-      <Fale />
-      <Footer />
+      <Router>
+        <Header />
+        <Routes>
+          <Route></Route>
+        </Routes>
+        <Hero />
+        <Video />
+        <Section_funcionalidades />
+        <Vantagens />
+        <Como_Funciona />
+        <Planos />
+        <Perguntas />
+        <Fale />
+        <Footer />
+      </Router>
     </main>
   );
 }

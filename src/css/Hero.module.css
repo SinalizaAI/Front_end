@@ -62,6 +62,21 @@
 
 .btn1 {
   background-color: var(--amarelo);
+  width: 45%;
+  height: 50px;
+  border-radius: 47px;
+  color: var(--azul_escuro);
+  font-family: var(--fonte_Jakarta);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  border: 1px solid var(--azul_escuro);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none; 
+  color: var(--azul_escuro);
 }
 
 .btn1:hover {

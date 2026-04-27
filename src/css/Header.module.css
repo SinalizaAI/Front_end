@@ -99,7 +99,7 @@
 
 /* Button */
 
-.links_nav nav button {
+.links_nav nav .button {
   width: 20%;
   height: 40px;
   border-radius: 47px;
@@ -110,11 +110,15 @@
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.links_nav nav button:hover {
+.links_nav nav .button:hover {
   background-color: var(--branco);
   transition: 0.2s;
   border: 1px solid var(--azul_escuro);
   cursor: pointer;
+  color: var(--azul_escuro);
 }

@@ -1,5 +1,6 @@
 import styles from "../css/Header.module.css";
 import Logo from "../assets/header/logo_n.svg";
+import { Link } from "react-router-dom";
 
 function Header() {
   // Scroll
@@ -27,8 +28,10 @@ function Header() {
           <nav>
             <a onClick={() => scrollToSection("inicio")}>Home</a>
             <a onClick={() => scrollToSection("funciona")}>Como funciona</a>
-            <a href="">Sobre nós</a>
-            <button>Cadastre-se</button>
+            <Link to={"/"}>Sobre nós</Link>
+            <Link to={"/"} className={styles.button}>
+              Cadastre-se
+            </Link>
           </nav>
         </div>
       </nav>

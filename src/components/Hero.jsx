@@ -1,4 +1,5 @@
 import styles from "../css/Hero.module.css";
+import { Link } from "react-router-dom";
 
 function Hero() {
   // Scroll para inicio
@@ -16,7 +17,9 @@ function Hero() {
           Comunicação é direito, <br /> não escolha
         </h1>
         <div className={styles.buttons}>
-          <button className={styles.btn1}>Teste agora</button>
+          <Link to={"/"} className={styles.btn1}>
+            Teste agora
+          </Link>
           <button
             className={styles.btn2}
             onClick={() => scrollToSection("vantagens")}
