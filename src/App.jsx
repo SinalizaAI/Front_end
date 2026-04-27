@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import Home from "./pages/Home";
 import Footer from "./components/Footer";
 import Tradutor from "./pages/Tradutor";
+import PlanosCompletos from "./pages/PlanosCompletos";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/Tradutor" element={<Tradutor />} />
+          <Route path="/PlanosCompletos" element={<PlanosCompletos />} />
         </Routes>
         <Footer />
       </Router>

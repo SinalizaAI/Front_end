@@ -1,5 +1,6 @@
 import styles from "../css/Planos.module.css";
 import Linha from "../assets/Planos/line.png";
+import { Link } from "react-router-dom";
 
 function Planos() {
   return (
@@ -53,9 +54,9 @@ function Planos() {
               </div>
             </div>
 
-            <div className={styles.btn}>
+            <Link to={"/PlanosCompletos"} className={styles.btn}>
               <button>Saiba mais</button>
-            </div>
+            </Link>
           </div>
           <div className={`${styles.plano} ${styles.plano_2}`}>
             <div className={styles.nome_p}>
@@ -120,9 +121,9 @@ function Planos() {
               </div>
             </div>
 
-            <div className={styles.btn}>
+            <Link to={"/PlanosCompletoS"} className={styles.btn}>
               <button>Saiba mais</button>
-            </div>
+            </Link>
           </div>
           <div className={`${styles.plano} ${styles.plano_3}`}>
             <div className={styles.recomendado}>
@@ -208,9 +209,9 @@ function Planos() {
               </div>
             </div>
 
-            <div className={styles.btn}>
+            <Link to={"/PlanosCompletos"} className={styles.btn}>
               <button>Saiba mais</button>
-            </div>
+            </Link>
           </div>
         </div>
       </div>
