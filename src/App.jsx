@@ -3,7 +3,7 @@ import "./App.css";
 import Header from "./components/Header";
 import Home from "./Pages/Home";
 import Footer from "./components/Footer";
-import Tradutor from "./components/Tradutor";
+import Tradutor from "./Pages/Tradutor";
 
 function App() {
   return (

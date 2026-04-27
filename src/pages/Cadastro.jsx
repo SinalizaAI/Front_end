@@ -1,7 +1,10 @@
 import styles from "../css/Cadastro.module.css";
 
 function Cadastro() {
-  return <></>;
+  return (
+    <>
+    </>
+  )
 }
 
 export default Cadastro;
