@@ -1,5 +1,4 @@
 import styles from "../css/Section_funcionalidades.module.css";
-import Video from "../assets/Funcionalidades/Video.mp4";
 import Funcionalidade_1 from "../assets/Funcionalidades/Speaker.svg";
 import Funcionalidade_2 from "../assets/Funcionalidades/Speaker2.png";
 import Funcionalidade_3 from "../assets/Funcionalidades/Hand.svg";
@@ -7,11 +6,6 @@ import Funcionalidade_3 from "../assets/Funcionalidades/Hand.svg";
 function Section_funcionalidades() {
   return (
     <section className={styles.sec_funcionalidades}>
-      <div className={styles.video_f}>
-        <video autoPlay loop muted>
-          <source src={Video} />
-        </video>
-      </div>
       <div className={styles.funcionalidades}>
         <div className={styles.container_itens}>
           <h1>Funcionalidades do sistema</h1>
