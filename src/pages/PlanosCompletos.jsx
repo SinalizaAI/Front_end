@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import styles from "../css/PlanosCompletos.module.css";
-import Line from "../assets/Planos/Line.png";
+import Line from "../assets/Planos/line.png";
 
 function PlanosCompletos() {
   return (
@@ -250,9 +250,7 @@ function PlanosCompletos() {
         </div>
         <div className={styles.cont2}>
           <div className={styles.text_title}>
-            <h2>
-              Plano Premium
-            </h2>
+            <h2>Plano Premium</h2>
           </div>
 
           <div className={styles.text2}>
