@@ -26,8 +26,12 @@ function Header() {
         </div>
         <div className={styles.links_nav}>
           <nav>
-            <a onClick={() => scrollToSection("inicio")}>Home</a>
-            <a onClick={() => scrollToSection("funciona")}>Como funciona</a>
+            <Link to="/" onClick={() => scrollToSection("inicio")}>
+              Home
+            </Link>
+            <Link to="/" onClick={() => scrollToSection("funciona")}>
+              Como funciona
+            </Link>
             <Link to={"/"}>Sobre nós</Link>
             <Link to={"/"} className={styles.button}>
               Cadastre-se

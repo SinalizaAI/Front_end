@@ -17,7 +17,7 @@ function Hero() {
           Comunicação é direito, <br /> não escolha
         </h1>
         <div className={styles.buttons}>
-          <Link to={"/"} className={styles.btn1}>
+          <Link to="/Tradutor" className={styles.btn1}>
             Teste agora
           </Link>
           <button
