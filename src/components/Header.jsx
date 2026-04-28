@@ -33,7 +33,7 @@ function Header() {
               Como funciona
             </Link>
             <Link to={"/pages/Sobre_Equipe"}>Sobre nós</Link>
-            <Link to={"/"} className={styles.button}>
+            <Link to={"/pages/Cadastro"} className={styles.button}>
               Cadastre-se
             </Link>
           </nav>

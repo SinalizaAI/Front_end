@@ -1,0 +1,134 @@
+@import url(../css/Global.css);
+
+.main {
+    position: relative;
+    width: 100%;
+    padding: 176px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main h1 {
+    font-family: var(--fonte_Prosto);
+    color: var(--azul_claro);
+    font-size: 50px;
+}
+
+.section {
+    width: 976.7px;;
+    height: 538.14px;
+    background-color: aquamarine;
+    margin-top: 88px;
+    border: 1px black solid;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.section h2 {
+    font-family: var(--fonte_Prosto);
+}
+
+.bem_vindo {
+    width: 50%;
+    height: 100%;
+    background-color: var(--branco);
+    border-right: 1px black solid;
+    border-radius: 20px 0px 0px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 137px;
+    gap: 24px;
+}
+
+.bem_vindo h2 {
+    width: 290px;
+    color: var(--azul_claro);
+}
+
+.bem_vindo p {
+    width: 200px;
+    color: var(--azul_escuro);
+}
+
+.btn {
+    width: 286px;
+    height: 50px;
+    background-color: var(--azul_escuro);
+    font-size: 20px;
+    font-family: var(--fonte_Jakarta);
+    color: white;
+    text-decoration: none;
+    border-radius: 47px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 79px;
+}
+
+.btn:hover {
+    background-color: white;
+    color: var(--azul_escuro);
+}
+
+.crie_conta {
+    width: 50%;
+    height: 100%;
+    background-color: var(--azul_claro);
+    border-radius: 0px 20px 20px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 48px;
+}
+
+.crie_conta h2 {
+    color: white;
+}
+
+.escrever {
+    width: 451px;
+    height: 54px;
+    border-radius: 20px;
+    margin-top: 25px;
+    background-color: var(--branco);
+}
+
+.escrever label {
+    background-color: transparent;
+}
+
+.confirmo {
+    font-size: 20px;
+}
+
+.termos {
+    font-size: 20px;
+}
+
+.btn2 {
+    width: 286px;
+    height: 50px;
+    background-color: var(--amarelo);
+    font-size: 20px;
+    font-family: var(--fonte_Jakarta);
+    color: black;
+    text-decoration: none;
+    border-radius: 47px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 22px;
+}
+
+.btn2:hover {
+    background-color: white;
+    color: var(--azul_escuro);
+}
+
+
