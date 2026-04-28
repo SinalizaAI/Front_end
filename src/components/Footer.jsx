@@ -15,7 +15,7 @@ function Footer({ semRadius }) {
       className={`${styles.footer_sec} ${semRadius ? styles.sem_radius : ""}`}
     >
       <div className={styles.logo_cont}>
-        <div
+        <Link to={"/"}
           className={styles.logo_container}
           onClick={() => scrollToSection("inicio")}
         >
@@ -28,7 +28,7 @@ function Footer({ semRadius }) {
             </h1>
             <h3>Comunicação é direito, não escolha</h3>
           </div>
-        </div>
+        </Link>
       </div>
       <div className={styles.texts_cont}>
         <div className={styles.cont_t}>
