@@ -14,7 +14,7 @@ import Gustavo from "../assets/Sobre_Equipe/Gustavo.png";
 import Ryan from "../assets/Sobre_Equipe/Ryan.png";
 import Thayna from "../assets/Sobre_Equipe/Thay.png";
 import Soares from "../assets/Sobre_Equipe/Amanda.png";
-import Isis from "../assets/Sobre_Equipe/ismaiara.png";
+import Isis from "../assets/Sobre_Equipe/Ismaiara.png";
 
 const membros = [
   {
