@@ -47,7 +47,7 @@
   border-radius: 60px;
 }
 
-.container button {
+.container .btn {
   width: 30%;
   height: 60px;
   border-radius: 47px;
@@ -61,9 +61,13 @@
   line-height: normal;
   align-items: center;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
 }
 
-.container button:hover {
+.container .btn:hover {
   background-color: var(--branco);
   transition: 0.1s;
   cursor: pointer;

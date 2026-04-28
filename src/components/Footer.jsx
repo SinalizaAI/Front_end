@@ -1,8 +1,8 @@
 import styles from "../css/Footer.module.css";
 import Logo from "../assets/header/logo_n.svg";
+import { Link } from "react-router-dom";
 
-function Footer() {
-  // Scroll para inicio
+function Footer({ semRadius }) {
   const scrollToSection = (id) => {
     const element = document.getElementById(id);
     if (element) {
@@ -11,7 +11,9 @@ function Footer() {
   };
 
   return (
-    <footer className={styles.footer_sec}>
+    <footer
+      className={`${styles.footer_sec} ${semRadius ? styles.sem_radius : ""}`}
+    >
       <div className={styles.logo_cont}>
         <div
           className={styles.logo_container}
@@ -32,10 +34,14 @@ function Footer() {
         <div className={styles.cont_t}>
           <h2>Navegação</h2>
           <div className={styles.cont_a}>
-            <a onClick={() => scrollToSection("inicio")}>Início</a>
-            <a onClick={() => scrollToSection("funciona")}>Como funciona</a>
-            <a href="">Sobre nós</a>
-            <a href="">Testar agora</a>
+            <Link to={"/"} onClick={() => scrollToSection("inicio")}>
+              Início
+            </Link>
+            <Link to={"/"} onClick={() => scrollToSection("funciona")}>
+              Como funciona
+            </Link>
+            <Link to={"/pages/Sobre_Equipe"}>Sobre nós</Link>
+            <Link to={"/Tradutor"}>Testar agora</Link>
           </div>
         </div>
         <div className={styles.cont_t}>

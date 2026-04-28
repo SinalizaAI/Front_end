@@ -2,10 +2,10 @@ import { useState, useEffect } from "react";
 import styles from "../css/Vantagens.module.css";
 import Imagem_1 from "../assets/Vantagens/Image_1.png";
 import Imagem_2 from "../assets/Vantagens/image_2.png";
-import Imagem_3 from "../assets/Vantagens/image_2.png";
-import Imagem_4 from "../assets/Vantagens/Image_1.png";
-import Imagem_5 from "../assets/Vantagens/image_2.png";
-import Imagem_6 from "../assets/Vantagens/Image_1.png";
+import Imagem_3 from "../assets/Vantagens/image3.jpg";
+import Imagem_4 from "../assets/Vantagens/image6.jpg";
+import Imagem_5 from "../assets/Vantagens/image5.jpg";
+import Imagem_6 from "../assets/Vantagens/image4.jpg";
 
 const PAGINAS = 3;
 

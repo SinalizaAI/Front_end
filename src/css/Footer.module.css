@@ -138,3 +138,7 @@ p {
   font-weight: 400;
   line-height: normal;
 }
+
+.sem_radius {
+  border-radius: 0;
+}

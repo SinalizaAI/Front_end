@@ -1,6 +1,7 @@
 import styles from "../css/Como_Funciona.module.css";
 import Fundo from "../assets/Como_funciona/fundo.png";
 import Video from "../assets/Como_funciona/video_ex.mp4";
+import { Link } from "react-router-dom";
 
 function Como_Funciona() {
   return (
@@ -11,7 +12,9 @@ function Como_Funciona() {
         <video autoPlay loop>
           <source src={Video} />
         </video>
-        <button>Teste agora</button>
+        <Link to={"/Tradutor"} className={styles.btn}>
+          Teste agora
+        </Link>
       </div>
     </section>
   );

@@ -32,7 +32,7 @@ function Header() {
             <Link to="/" onClick={() => scrollToSection("funciona")}>
               Como funciona
             </Link>
-            <Link to={"/"}>Sobre nós</Link>
+            <Link to={"/pages/Sobre_Equipe"}>Sobre nós</Link>
             <Link to={"/"} className={styles.button}>
               Cadastre-se
             </Link>
