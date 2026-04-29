@@ -54,6 +54,7 @@
     width: 200px;
     color: var(--azul_escuro);
     font-size: 25px;
+    font-family: var(--Fonte_Nunito);
 }
 
 .btn {
@@ -72,8 +73,10 @@
 }
 
 .btn:hover {
-    background-color: white;
+    background-color: var(--amarelo);
     color: var(--azul_escuro);
+    border: 1px solid var(--azul_escuro);
+    transition: 0.1s;
 }
 
 .crie_conta {
@@ -101,9 +104,10 @@
 }
 
 .cadastre {
-    font-family: var(--fonte_Nunito);
+    font-family: var(--Fonte_Nunito);
     color: white;
     font-size: 25px;
+    font-weight: bold;
 }
 
 .escrever {
@@ -111,6 +115,7 @@
     height: 54px;
     border-radius: 20px;
     margin-top: 25px;
+    padding-left: 15px;
     background-color: var(--branco);
     display: flex;
 }
@@ -124,13 +129,13 @@
 .escrever input {
     width: 85%;
     font-size: 20px;
-    font-family: var(--fonte_Nunito);
+    font-family: var(--Fonte_Nunito);
     background-color: transparent;
     outline: none
 }
 
 .termos_de_uso {
-    width: 280px;
+    width: 310px;
     color: white;
     margin-top: 10px;
     display: flex;
@@ -145,12 +150,12 @@
 
 .confirmo {
     font-size: 15px;
-    font-family: var(--fonte_Nunito);
+    font-family: var(--Fonte_Nunito);
 }
 
 .termos {
     font-size: 15px;
-    font-family: var(--fonte_Nunito);
+    font-family: var(--Fonte_Nunito);
     color: var(--amarelo);
     text-decoration: none;
 }
@@ -164,7 +169,7 @@
     height: 50px;
     background-color: var(--amarelo);
     font-size: 20px;
-    font-family: var(--fonte_Nunito);
+    font-family: var(--fonte_Jakarta);
     color: black;
     text-decoration: none;
     border-radius: 47px;
@@ -172,11 +177,13 @@
     justify-content: center;
     align-items: center;
     margin-top: 22px;
+    border: 1px solid var(--azul_escuro);
 }
 
 .btn2:hover {
     background-color: white;
     color: var(--azul_escuro);
+    transition: 0.1s;
 }
 
 

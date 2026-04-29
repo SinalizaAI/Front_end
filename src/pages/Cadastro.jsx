@@ -9,14 +9,16 @@ import senhaIcon from "../assets/Cadastro/lock.png";
 function Cadastro() {
   const [aceitou, setAceitou] = useState(false);
   const navigate = useNavigate();
-  const handleCadastro = () => {
-    if (!aceitou) {
-      alert("Você aceita os termos de uso?");
-      return;
-    }
+  const handleCadastro = (e) => {
+  e.preventDefault();
 
-    navigate("/Login");
-  };
+  if (!aceitou) {
+    alert("Você não aceitou os termos de uso.");
+    return;
+  }
+
+  navigate("/Login");
+};
 
   return (
     <main className={styles.main}>

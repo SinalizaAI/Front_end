@@ -8,7 +8,7 @@ function Login() {
           <div className={styles.bem_vindo}>
             <h2> Seja Bem-vindo! </h2>
             <p> Crie sua conta agora </p>
-            <a href="#"> Cadastrar </a>
+            <a href=""> Cadastrar </a>
           </div>
           <div className={styles.entre_conta}>
   
