@@ -132,3 +132,58 @@
     transform: translateY(0);
   }
 }
+
+/* Mobile */
+
+@media (max-width: 800px) {
+  .image_cont {
+    width: 0;
+    background-image: none;
+  }
+
+  .content_cont {
+    width: 100%;
+  }
+
+  .content_cont h1 {
+    font-size: 24px;
+  }
+
+  .pergunta {
+    gap: 10px;
+  }
+
+  .pergunta h2 {
+    font-size: 22px;
+  }
+
+  .resposta p {
+    font-size: 22px;
+  }
+
+  .pergunta img {
+    width: 40px;
+  }
+}
+
+@media (min-width: 801px) and (max-width: 1220px) {
+  .content_cont h1 {
+    font-size: 26px;
+  }
+
+  .pergunta {
+    gap: 30px;
+  }
+
+  .pergunta h2 {
+    font-size: 25px;
+  }
+
+  .resposta p {
+    font-size: 25px;
+  }
+
+  .pergunta img {
+    width: 40px;
+  }
+}
