@@ -1,8 +1,8 @@
 import styles from "../css/Hero.module.css";
 import { Link } from "react-router-dom";
+import HeroImage from "../assets/Hero/image.png";
 
 function Hero() {
-  // Scroll para inicio
   const scrollToSection = (id) => {
     const element = document.getElementById(id);
     if (element) {
@@ -12,6 +12,12 @@ function Hero() {
 
   return (
     <section className={styles.hero_sec} id="inicio">
+
+      {/* Imagem separada em div própria */}
+      <div className={styles.bg_image}>
+        <img src={HeroImage} alt="" aria-hidden="true" />
+      </div>
+
       <div className={styles.text}>
         <h1>
           Comunicação é direito, <br /> não escolha
@@ -28,6 +34,7 @@ function Hero() {
           </button>
         </div>
       </div>
+
     </section>
   );
 }
