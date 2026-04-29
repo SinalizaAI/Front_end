@@ -1,7 +1,23 @@
 import { Link } from "react-router-dom";
 import styles from "../css/Cadastro.module.css";
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import emailIcon from "../assets/Cadastro/email.png";
+import nomeIcon from "../assets/Cadastro/profile.png";
+import senhaIcon from "../assets/Cadastro/lock.png";
 
 function Cadastro() {
+  const [aceitou, setAceitou] = useState(false);
+  const navigate = useNavigate();
+  const handleCadastro = () => {
+    if (!aceitou) {
+      alert("Você aceita os termos de uso?");
+      return;
+    }
+
+    navigate("/Login");
+  };
+
   return (
     <main className={styles.main}>
       <h1> Olá, só mais uma Etapa </h1>
@@ -13,40 +29,44 @@ function Cadastro() {
         </div>
         <div className={styles.crie_conta}>
           <h2> Crie sua conta gratuitamente </h2>
-          <p> Cadastre seus dados </p>
-          <div className={styles.escrever}>
-          <label htmlFor="Nome"></label>
-              <input
-                id="Nome"
-                type="text"
-                name="Nome"
-                placeholder="Nome"
-                required
-              />
-              </div>
-              <div className={styles.escrever}>
-          <label htmlFor="Email"></label>
-              <input
-                id="Email"
-                type="email"
-                name="Email"
-                placeholder="Email"
-                required
-              />
-              </div>
-              <div className={styles.escrever}>
-          <label htmlFor="Senha"></label>
-              <input
-                id="Senha"
-                type="password"
-                name="Senha"
-                placeholder="Senha"
-                required
-              />
+          <p className={styles.cadastre}> Cadastre seus dados </p>
+
+          <form onSubmit={handleCadastro}>
+
+            <div className={styles.escrever}>
+              <img src={nomeIcon} alt="Ícone Nome" />
+              <input type="text" placeholder="Nome" required />
             </div>
-          <p className={styles.confirmo}> Confirmo que li e aceito os </p>
-          <p className={styles.termos}>termos de uso.</p>
-          <Link to={"/Login"} className={styles.btn2}> Cadastrar </Link>
+
+            <div className={styles.escrever}>
+              <img src={emailIcon} alt="Ícone Email" />
+              <input type="email" placeholder="Email" required />
+            </div>
+
+            <div className={styles.escrever}>
+              <img src={senhaIcon} alt="Ícone Senha" />
+              <input type="password" placeholder="Senha" required />
+            </div>
+
+            <div className={styles.termos_de_uso}>
+              <label>
+                <input
+                  type="checkbox"
+                  checked={aceitou}
+                  onChange={(e) => setAceitou(e.target.checked)}
+                />
+                <span className={styles.confirmo}>
+                  Confirmo que li e aceito os{" "}
+                  <a href="#" className={styles.termos}>termos de uso</a>
+                </span>
+              </label>
+            </div>
+
+            <button type="submit" className={styles.btn2}>
+              Cadastrar
+            </button>
+
+          </form>
         </div>
       </section>
     </main>
