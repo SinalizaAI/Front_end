@@ -62,3 +62,37 @@
   font-weight: 400;
   line-height: normal;
 }
+
+/* mobile */
+
+@media (max-width: 900px) {
+  .funcionalidades {
+    height: 900px;
+  }
+
+  .container_itens {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 800px;
+    gap: 20px;
+  }
+
+  .container_itens h1 {
+    font-size: 24px;
+  }
+
+  .container_func {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .func {
+    width: 100%;
+  }
+
+  .func h3 {
+    font-size: 22px;
+  }
+}
