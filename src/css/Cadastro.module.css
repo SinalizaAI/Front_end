@@ -131,7 +131,8 @@
     font-size: 20px;
     font-family: var(--Fonte_Nunito);
     background-color: transparent;
-    outline: none
+    outline: none;
+    padding-left: 15px;
 }
 
 .termos_de_uso {
@@ -146,6 +147,10 @@
 .termos_de_uso label {
     display: flex;
     gap: 8px;
+}
+
+.termos_de_uso input:hover {
+    cursor: pointer;
 }
 
 .confirmo {
@@ -183,6 +188,7 @@
 .btn2:hover {
     background-color: white;
     color: var(--azul_escuro);
+    cursor: pointer;
     transition: 0.1s;
 }
 

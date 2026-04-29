@@ -59,7 +59,7 @@ function Cadastro() {
                 />
                 <span className={styles.confirmo}>
                   Confirmo que li e aceito os{" "}
-                  <a href="#" className={styles.termos}>termos de uso</a>
+                  <a href="#" className={styles.termos}>termos de uso.</a>
                 </span>
               </label>
             </div>
